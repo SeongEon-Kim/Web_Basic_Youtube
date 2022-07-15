@@ -24,14 +24,21 @@
     display: flex;
 }
 
+#Search {
+    width: 480px;
+    height: 30px;
+    margin-top: 5px;
+
+}
+
 #Upload_App_Notification_Account {
     display: flex;
 }
 
-#Container {
+/* #Container {
     display: flex;
     flex-direction: column;
-}
+} */
 
 #Bottom_Container {
     display: flex;
@@ -46,6 +53,8 @@
     height: 1000px;
     position: fixed;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 #Video {
@@ -53,6 +62,11 @@
     flex-wrap: wrap;
     margin-top: 35px;
     margin-left: 215px;
+    /* flex-basis: 215px; */
+    /* flex-shrink: 0; */
+    /* min-width: 300px;
+    flex-direction: row;
+    flex-basis: 23.5%; */
 }
 
 #Video_Detail {
@@ -62,6 +76,10 @@
     margin-right: 5px;
     margin-bottom: 90px;
     margin-top: 15px;
+    /* min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 23.5%; */
 }
 
 #Video_Png {
@@ -74,18 +92,18 @@
     display: flex;
 }
 
-#Video_Views {
-    font-size: 10px;
-    color: gray;
-    height: 100px;
-    margin-left: 5px;
-}
-
 #Video_Title {
     margin-top: 10px;
     margin-bottom: 3px;
     margin-left: 5px;
     margin-right: 1px;
+}
+
+#Video_Views {
+    font-size: 10px;
+    color: gray;
+    /* height: 100px; */
+    margin-left: 5px;
 }
 
 #Video_Youtuber {
