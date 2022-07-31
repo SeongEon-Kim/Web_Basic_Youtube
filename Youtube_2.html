@@ -1,3 +1,9 @@
+<!-- 과제 1. 유튜브가 가로 줄어듦에 따라 검색창이 사라지고, 메뉴가 작아짐, 동영상이 가득차면서 점차 줄어들다가 점점 작아지고 3개로 바껴서 반복
+-> Media Query(웹 브라우저의 가로 길이에 따라 CSS를 변화시킬 수 있는 기능) , 피드백 반영, (태현: 트랜지션) 
+1343
+956
+
+-->
 <!DOCTYPE html>
 <html lang="kr">
 
@@ -5,7 +11,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>유튜브 구현</title>
     <link rel="stylesheet" type="text/css" href="Youtube_2.css">
 </head>
 
@@ -13,9 +19,9 @@
     <header id="Top_Menu_Bar">
         <!-- 요소는 소개 및 탐색에 도움을 주는 콘텐츠를 나타냅니다. 
             제목, 로고, 검색 폼, 작성자 이름 등의 요소도 포함할 수 있습니다. -->
-        <div id="Navigation_Preimium">
-            <img src="Youtube_Img/Navigation.png">
-            <img src="Youtube_Img/Youtube_Premium.png">
+        <div id="Navigation_Premium">
+            <img src="Youtube_Img/Navigation.png" id="Navigation">
+            <img src="Youtube_Img/Youtube_Premium.png" id="Premium">
         </div>
         <!-- 메인 안 작은 범위   
             (스어 홈페이지 중요한 부분(차별점은 아티클로 함) 
@@ -23,14 +29,14 @@
         <div id="Search_Mic">
             <!-- <img src="Youtube_Img/Search.png"> -->
             <input type="text" placeholder="검색" id="Search">
-            <img src="Youtube_Img/Magnifying_Glass.png">
-            <img src="Youtube_Img/Mic.png">
+            <img src="Youtube_Img/Magnifying_Glass.png" id="Glass">
+            <img src="Youtube_Img/Mic.png" id="Mic">
         </div>
         <div id="Upload_App_Notification_Account">
-            <img src="Youtube_Img/Video_Upload.png">
-            <img src="Youtube_Img/Youtube_App.png">
-            <img src="Youtube_Img/Notification.png">
-            <img src="Youtube_Img/Account.png">
+            <img src="Youtube_Img/Video_Upload.png" id="Upload">
+            <img src="Youtube_Img/Youtube_App.png" id="App">
+            <img src="Youtube_Img/Notification.png" id="Notification">
+            <img src="Youtube_Img/Account.png" id="Account">
         </div>
     </header>
     <section id="Bottom_Container">
@@ -57,6 +63,9 @@
         </nav>
         <main id="Video">
             <div id="Video_Detail">
+                <!-- 클래스로 수정, 이미지는 width, height 중 하나만!!!!!
+                    css 이름 지을 때 snake !!!
+                 -->
                 <img src="Youtube_Img/Video_1.png" id="Video_Png">
                 <div id="Video_Information_Detail">
                     <img src="Youtube_Img/Youtuber_3.png" id="Video_Youtuber">
